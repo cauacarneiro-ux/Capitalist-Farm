@@ -3,9 +3,11 @@
 #include <stdbool.h>
 #include <conio.h>
 #include <locale.h>
+#include <string.h>
+
 #include "estruturas.h"
 #include "funcoes.h"
-
+#include "visuais.h"
 
 int main(){
     system("chcp 65001 > nul");
@@ -14,7 +16,7 @@ int main(){
     bool jogoRodando = true;
     while(jogoRodando == true){
         jogoRodando = iniciar_jogo();
-        limpatela();
+        inicializar_jogador(j);
     }
 }
 

@@ -3,12 +3,6 @@
 
 //ESTRUTURAS DE ENTIDADES UTILIZADAS NO JOGO
 
-typedef struct {
-    int     id_jogador;
-    char    nome_jogador[20];
-    float   dinheiro_jogador;
-    int     campos_jogador;
-} jogador;
 
 typedef struct {
     int     id_producao;
@@ -18,10 +12,17 @@ typedef struct {
 } producao;
 
 typedef struct {
-    int     id_campo;
-    char    tipo_campo[10];
-    int     producao_campo;
+    int         id_campo;
+    char        tipo_campo[10];
+    producao    producao_campo[4];
 } campo;
+
+typedef struct {
+    int     id_jogador;
+    char    nome_jogador[20];
+    float   dinheiro_jogador;
+    campo   campos_jogador[4];
+} jogador;
 
 typedef struct {
     int     id_eventos;

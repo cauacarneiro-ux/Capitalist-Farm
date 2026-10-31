@@ -27,6 +27,10 @@
 		<Unit filename="principal_jogo.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="visuais.h" />
+		<Unit filename="visuais_jogo.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

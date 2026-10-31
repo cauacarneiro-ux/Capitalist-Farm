@@ -1,8 +1,14 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 #include <conio.h>
+
 #include "estruturas.h"
+#include "funcoes.h"
+#include "visuais.h"
+
+jogador j[4];
 
 //FUNÇÕES UTILITÁRIAS
 
@@ -23,8 +29,18 @@ char lerTecla(){
 
 //IMPLEMENTAÇÃO INICIALIZAÇÃO DE ESTRUTURAS
 
-void inicializar_jogador(jogador *j, int id_jogador, char nome_jogador[20], float dinheiro_jogador, int campos_jogador){
-    for(int i=1; i<=4; i++){
+void inicializar_jogador(jogador j[4]){
+    for(int i=0; i<4; i++){
+        if (i == 0){
+            printf("Digite o nome do jogador %i: ", i+1);
+            fgets(j[i].nome_jogador, sizeof(j[i].nome_jogador), stdin);
+            j[i].nome_jogador[strcspn(j[i].nome_jogador, "\n")] = '\0';
+            j[i].id_jogador = i+1;
+            j[i].dinheiro_jogador = 1000;
+            j[i].campos_jogador = {0};
+        } else {
+
+        }
 
     }
 }
@@ -34,26 +50,9 @@ void inicializar_jogador(jogador *j, int id_jogador, char nome_jogador[20], floa
 //IMPLEMENTAÇÃO FUNÇÕES DE MENU
 
 bool iniciar_jogo(){
-    printf("=============================================\n");
-    printf("          🌾 CAPITALIST FARM 🌾              \n");
-    printf("=============================================\n");
-    printf("                                             \n");
-    printf("                 __|__                       \n");
-    printf("            ____/     \\____                  \n");
-    printf("           /               \\                 \n");
-    printf("          /   _       _     \\                \n");
-    printf("         /___|_|_____|_|_____\\               \n");
-    printf("             |  _   _  |                     \n");
-    printf("             | | | | | |                     \n");
-    printf("        _____|_|_|_|_|_|_____                 \n");
-    printf("       /                     \\                \n");
-    printf("      /_______________________\\               \n");
-    printf("                                             \n");
-    printf("       $$$  PLANT. HARVEST. PROFIT.  $$$     \n");
-    printf("                                             \n");
-    printf("=============================================\n");
-    printf("\n\nDigite qualquer tecla para iniciar o jogo\n\n");
+    desenharMenu();
     lerTecla();
+    limpatela();
     return true;
 }
 

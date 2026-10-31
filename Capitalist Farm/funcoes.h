@@ -1,11 +1,19 @@
 #ifndef FUNCOES_H
 #define FUNCOES_H
 
+#include "estruturas.h"
+
+extern jogador j[4];
+extern producao *p;
+extern campo *c;
+extern eventos *e;
+
+
 //FUNÇÕES PARA INICIALIZAÇÃO DE ESTRUTURAS
 
-void inicializar_jogador(jogador *j, int id_jogador, char nome_jogador[20], float dinheiro_jogador, int campos_jogador);
-void inicializar_producao(producao *p, int id_producao, char nome_producao[20], float custo_producao, int lucro_producao);
-void inicializar_campo(campo *c, int id_campo, char tipo_campo[10], int producao_campo);
+void inicializar_jogador(jogador j[4]);
+void inicializar_producao(producao *p, int id_producao, char nome_producao[20], float custo_producao, float lucro_producao);
+void inicializar_campo(campo *c, int id_campo, char tipo_campo[10], producao *producao_campo);
 void inicializar_evento(eventos *e, int id_eventos, char nome_eventos[20], int tipo_eventos);
 
 
@@ -13,7 +21,7 @@ void inicializar_evento(eventos *e, int id_eventos, char nome_eventos[20], int t
 
 //FUNÇÕES DO MENU DO JOGO
 
-char iniciar_jogo();
+bool iniciar_jogo();
 
 
 
@@ -23,6 +31,7 @@ char iniciar_jogo();
 
 void limpatela();
 void pausatela();
+char lerTecla();
 
 
 
