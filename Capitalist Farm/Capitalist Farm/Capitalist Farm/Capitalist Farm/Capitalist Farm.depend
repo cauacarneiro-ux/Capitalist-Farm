@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1793385160 source:c:\users\cauac\downloads\capitalist farm\capitalist farm\funcoes_jogo.c
+	<stdio.h>
+	<stdlib.h>
+	"estruturas.h"
+
+1793383430 c:\users\cauac\downloads\capitalist farm\capitalist farm\estruturas.h
+
+1793402341 source:c:\users\846238\downloads\capitalist farm\capitalist farm\funcoes_jogo.c
+	<stdio.h>
+	<stdlib.h>
+	"estruturas.h"
+
+1793399274 c:\users\846238\downloads\capitalist farm\capitalist farm\estruturas.h
+
+1793402300 source:c:\users\846238\downloads\capitalist farm\capitalist farm\principal_jogo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"estruturas.h"
+	"funcoes.h"
+
+1793401101 c:\users\846238\downloads\capitalist farm\capitalist farm\funcoes.h
+
+1793407683 source:c:\users\846238\downloads\capitalist farm\capitalist farm\capitalist farm\funcoes_jogo.c
+	<stdlib.h>
+	<stdbool.h>
+	<conio.h>
+	"estruturas.h"
+
+1793405933 c:\users\846238\downloads\capitalist farm\capitalist farm\capitalist farm\estruturas.h
+
+1793407844 source:c:\users\846238\downloads\capitalist farm\capitalist farm\capitalist farm\principal_jogo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<conio.h>
+	<locale.h>
+	"estruturas.h"
+	"funcoes.h"
+
+1793407162 c:\users\846238\downloads\capitalist farm\capitalist farm\capitalist farm\funcoes.h
+
