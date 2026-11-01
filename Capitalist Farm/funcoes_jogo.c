@@ -31,15 +31,15 @@ char lerTecla(){
 
 void inicializar_jogador(jogador j[4]){
     for(int i=0; i<4; i++){
+            j[i].id_jogador = i+1;
+            j[i].dinheiro_jogador = 1000;
+            j[i].campos_jogador[4] = {0};
         if (i == 0){
             printf("Digite o nome do jogador %i: ", i+1);
             fgets(j[i].nome_jogador, sizeof(j[i].nome_jogador), stdin);
             j[i].nome_jogador[strcspn(j[i].nome_jogador, "\n")] = '\0';
-            j[i].id_jogador = i+1;
-            j[i].dinheiro_jogador = 1000;
-            j[i].campos_jogador = {0};
         } else {
-
+            printf("Digite");
         }
 
     }
