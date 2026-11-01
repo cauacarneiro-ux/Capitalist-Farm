@@ -1,6 +1,8 @@
 #ifndef FUNCOES_H
 #define FUNCOES_H
 
+#include <windows.h>
+#include <stdbool.h>
 #include "estruturas.h"
 
 extern jogador j[4];
@@ -21,7 +23,7 @@ void inicializar_evento(eventos *e, int id_eventos, char nome_eventos[20], int t
 
 //FUNÇÕES DO MENU DO JOGO
 
-bool iniciar_jogo();
+char iniciar_jogo();
 
 
 
@@ -32,7 +34,8 @@ bool iniciar_jogo();
 void limpatela();
 void pausatela();
 char lerTecla();
-
+void esconder_cursor();
+void listar_jogadores();
 
 
 #endif

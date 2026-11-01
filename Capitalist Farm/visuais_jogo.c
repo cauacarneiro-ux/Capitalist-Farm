@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <conio.h>
+#include <windows.h>
 
 #include "estruturas.h"
 #include "visuais.h"
@@ -24,6 +25,5 @@ void desenharMenu(){
     printf("                                             \n");
     printf("     $$$  PLANTE. COLHA. LUCRE.  $$$     \n");
     printf("                                             \n");
-    printf("=============================================\n");
-    printf("\n\nDigite qualquer tecla para iniciar o jogo\n\n");
+    printf("=============================================\n\n");
 }
