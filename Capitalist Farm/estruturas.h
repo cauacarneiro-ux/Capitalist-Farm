@@ -19,7 +19,7 @@ typedef struct {
 
 typedef struct {
     int     id_jogador;
-    char    nome_jogador[20];
+    char    nome_jogador[16];
     float   dinheiro_jogador;
     campo   campos_jogador[4];
 } jogador;
@@ -29,5 +29,11 @@ typedef struct {
     char    nome_eventos[20];
     int     tipo_eventos;
 } eventos;
+
+typedef struct {
+    int id_partida;
+    int jogadores_partida;
+    char vencedor_partida[16];
+}partidas;
 
 #endif

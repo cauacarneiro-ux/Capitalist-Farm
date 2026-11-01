@@ -41,7 +41,7 @@
 
 1793407162 c:\users\846238\downloads\capitalist farm\capitalist farm\capitalist farm\funcoes.h
 
-1793508779 source:c:\users\cauac\documents\github\capitalist-farm\capitalist farm\funcoes_jogo.c
+1793542300 source:c:\users\cauac\documents\github\capitalist-farm\capitalist farm\funcoes_jogo.c
 	<stdlib.h>
 	<stdbool.h>
 	<string.h>
@@ -51,7 +51,7 @@
 	"funcoes.h"
 	"visuais.h"
 
-1793488845 c:\users\cauac\documents\github\capitalist-farm\capitalist farm\estruturas.h
+1793562402 c:\users\cauac\documents\github\capitalist-farm\capitalist farm\estruturas.h
 
 1793508540 source:c:\users\cauac\documents\github\capitalist-farm\capitalist farm\principal_jogo.c
 	<stdio.h>
@@ -65,7 +65,7 @@
 	"funcoes.h"
 	"visuais.h"
 
-1793509060 c:\users\cauac\documents\github\capitalist-farm\capitalist farm\funcoes.h
+1793562426 c:\users\cauac\documents\github\capitalist-farm\capitalist farm\funcoes.h
 	<windows.h>
 	<stdbool.h>
 	"estruturas.h"
