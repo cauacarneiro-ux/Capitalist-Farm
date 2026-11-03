@@ -7,8 +7,8 @@
 typedef struct {
     int     id_producao;
     char    nome_producao[20];
-    float   custo_producao;
-    float   lucro_producao;
+    double   custo_producao;
+    double   lucro_producao;
 } producao;
 
 typedef struct {
@@ -19,8 +19,9 @@ typedef struct {
 
 typedef struct {
     int     id_jogador;
+    int     status_jogador;
     char    nome_jogador[16];
-    float   dinheiro_jogador;
+    double   dinheiro_jogador;
     campo   campos_jogador[4];
 } jogador;
 
@@ -32,7 +33,8 @@ typedef struct {
 
 typedef struct {
     int id_partida;
-    int jogadores_partida;
+    int turnos;
+    jogador jogadores_partida[4];
     char vencedor_partida[16];
 }partidas;
 

@@ -21,6 +21,7 @@ int main(){
             break;
         }
         inicializar_jogador(j);
+
     }
 }
 
