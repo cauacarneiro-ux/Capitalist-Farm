@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <conio.h>
 #include <windows.h>
+#include <math.h>
 
 #include "estruturas.h"
 #include "visuais.h"
@@ -28,7 +29,7 @@ void desenharMenu(){
     printf("=============================================\n\n");
 }
 
-void desenhar_fazendas(char nome[], double dinheiro, int campos, int produtos, char nomes[][21], double saldos[]) {
+void desenhar_fazendas(char nome[], float dinheiro, int campos, int produtos, char nomes[][21], float saldos[]) {
     printf("\n");
     printf("============================================================================\n");
     printf("                         FAZENDA PRINCIPAL                                 \n");
@@ -36,7 +37,7 @@ void desenhar_fazendas(char nome[], double dinheiro, int campos, int produtos, c
 
     printf("  JOGADOR DA VEZ: %-20s\n", nome);
 
-    printf("  Dinheiro: R$ %-12lld\n", dinheiro);
+    printf("  Dinheiro: R$ %-12.2f\n", dinheiro);
     printf("  Campos:   %-5d\n", campos);
     printf("  Produtos: %-5d\n", produtos);
 
@@ -76,7 +77,7 @@ void desenhar_fazendas(char nome[], double dinheiro, int campos, int produtos, c
     printf("\n");
 
     for (int i = 0; i < 3; i++) {
-        printf("  | R$ %-16lld |", saldos[i]);
+        printf("  | R$ %-16.2f |", saldos[i]);
     }
 
     printf("\n");

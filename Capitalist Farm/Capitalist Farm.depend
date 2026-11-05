@@ -80,3 +80,34 @@
 	"estruturas.h"
 	"visuais.h"
 
+1793912908 source:c:\users\846238\documents\github\capitalist-farm\capitalist farm\funcoes_jogo.c
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<conio.h>
+	<windows.h>
+	"estruturas.h"
+	"funcoes.h"
+	"visuais.h"
+
+1793912908 c:\users\846238\documents\github\capitalist-farm\capitalist farm\estruturas.h
+
+1793912908 c:\users\846238\documents\github\capitalist-farm\capitalist farm\funcoes.h
+	<windows.h>
+	<stdbool.h>
+	"estruturas.h"
+
+1793913673 c:\users\846238\documents\github\capitalist-farm\capitalist farm\visuais.h
+
+1793912908 source:c:\users\846238\documents\github\capitalist-farm\capitalist farm\principal_jogo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<conio.h>
+	<locale.h>
+	<string.h>
+	<windows.h>
+	"estruturas.h"
+	"funcoes.h"
+	"visuais.h"
+
